@@ -1,0 +1,11 @@
+--- tclxml-3.2/tclxml-tcl/sgmlparser.tcl.orig	2008-12-15 15:43:03.000000000 -0800
++++ tclxml-3.2/tclxml-tcl/sgmlparser.tcl	2008-12-15 15:43:12.000000000 -0800
+@@ -608,7 +608,7 @@
+ 			    }
+ 			} elseif {![regexp ^$Name\$ $tag]} {
+ 			    uplevel #0 $options(-errorcommand) [list illegalcharacter "illegal character in processing instruction target \"$tag\""]
+-			} elseif {[regexp {[xX][mM][lL]} $tag]} {
++			} elseif {[regexp {^[xX][mM][lL]} $tag]} {
+ 			    uplevel #0 $options(-errorcommand) [list illegalcharacters "characters \"xml\" not permitted in processing instruction target \"$tag\""]
+ 			} elseif {![regsub {\?$} $param {} param]} {
+ 			    uplevel #0 $options(-errorcommand) [list missingquestion "PI: expected '?' character around line $state(line)"]

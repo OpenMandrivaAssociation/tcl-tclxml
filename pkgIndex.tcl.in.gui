@@ -1,0 +1,4 @@
+package ifneeded cgi2dom         1.1       [list source [file join $dir cgi2dom.tcl]]
+package ifneeded domtree         @VERSION@ [list source [file join $dir domtree.tcl]]
+package ifneeded domtree::treectrl @VERSION@ [list source [file join $dir domtree-treectrl.tcl]]
+package ifneeded domtext         @VERSION@ [list source [file join $dir domtext.tcl]]
