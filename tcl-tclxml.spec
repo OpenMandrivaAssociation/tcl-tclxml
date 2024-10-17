@@ -6,7 +6,7 @@ Version:	3.2
 Release:	1
 License:	BSD
 Group:		System/Libraries
-Url:		http://tclxml.sourceforge.net/
+Url:		https://tclxml.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/tclxml/tclxml-%{version}.tar.gz
 Source1:	pkgIndex.tcl.in.gui
 Patch0:		tclxml-3.2-sgmlparser.patch
