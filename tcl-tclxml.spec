@@ -11,6 +11,11 @@ Source0:	http://downloads.sourceforge.net/tclxml/tclxml-%{version}.tar.gz
 Source1:	pkgIndex.tcl.in.gui
 Patch0:		tclxml-3.2-sgmlparser.patch
 Patch1:		tclxml-3.2-sfmt.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	tcl-devel
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(libxslt)
